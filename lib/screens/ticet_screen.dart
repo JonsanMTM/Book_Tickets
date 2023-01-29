@@ -37,7 +37,7 @@ class TicketScreen extends StatelessWidget {
                   padding: EdgeInsets.only(left: AppLayout.getHeight(10)),
                   child: TicketView(ticket: ticketlist[0], isColor: true),
                 ),
-                FourText(
+                const FourText(
                     firstTop: "Flutter DB ",
                     secondTop: "5221 478566",
                     firstBottom: "Passenger",
@@ -46,7 +46,7 @@ class TicketScreen extends StatelessWidget {
                   margin: EdgeInsets.only(
                       right: AppLayout.getHeight(16),
                       left: AppLayout.getHeight(11)),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Colors.white,
                   ),
                   child: SizedBox(
@@ -75,7 +75,7 @@ class TicketScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                FourText(
+                const FourText(
                     firstTop: "0055 444 77147",
                     secondTop: "B2SG2B",
                     firstBottom: "Number of E-ticket",
@@ -84,7 +84,7 @@ class TicketScreen extends StatelessWidget {
                   margin: EdgeInsets.only(
                       right: AppLayout.getHeight(16),
                       left: AppLayout.getHeight(11)),
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Colors.white,
                   ),
                   child: Column(
@@ -182,7 +182,7 @@ class TicketScreen extends StatelessWidget {
             left: AppLayout.getWidth(19),
             top: AppLayout.getHeight(295),
             child: Container(
-              padding: EdgeInsets.all(2),
+              padding: const EdgeInsets.all(2),
               decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   border: Border.all(color: Style.textColor, width: 2)),
@@ -196,7 +196,7 @@ class TicketScreen extends StatelessWidget {
             right: AppLayout.getWidth(19),
             top: AppLayout.getHeight(295),
             child: Container(
-              padding: EdgeInsets.all(2),
+              padding: const EdgeInsets.all(2),
               decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   border: Border.all(color: Style.textColor, width: 2)),

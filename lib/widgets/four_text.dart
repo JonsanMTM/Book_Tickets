@@ -15,7 +15,7 @@ class FourText extends StatelessWidget {
     return Container(
       margin: EdgeInsets.only(
           right: AppLayout.getHeight(16), left: AppLayout.getHeight(11)),
-      decoration: BoxDecoration(
+      decoration:  const BoxDecoration(
         color: Colors.white,
       ),
       padding: const EdgeInsets.all(16),

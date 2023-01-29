@@ -2,9 +2,7 @@ import 'package:Book_tickets/utils/app_layout.dart';
 import 'package:Book_tickets/utils/app_style.dart';
 import 'package:Book_tickets/widgets/thick_container.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:gap/gap.dart';
-import 'package:get/get_utils/get_utils.dart';
 
 class TicketView extends StatelessWidget {
   final Map<String, dynamic> ticket;
@@ -28,8 +26,8 @@ class TicketView extends StatelessWidget {
             */
             Container(
               decoration: BoxDecoration(
-                color: isColor == null ? Color(0xFF526799) : Colors.white,
-                borderRadius: BorderRadius.only(
+                color: isColor == null ? const Color(0xFF526799) : Colors.white,
+                borderRadius: const BorderRadius.only(
                   topLeft: Radius.circular(21),
                   topRight: Radius.circular(21),
                 ),
@@ -46,7 +44,7 @@ class TicketView extends StatelessWidget {
                             : Style.headLineStyle3,
                       ),
                       Expanded(child: Container()),
-                      ThickContainer(isColor: true),
+                      const ThickContainer(isColor: true),
                       Expanded(
                           child: Stack(
                         children: [
@@ -70,7 +68,7 @@ class TicketView extends StatelessWidget {
                                                 decoration: BoxDecoration(
                                                     color: isColor == null
                                                         ? Colors.white
-                                                        : Color(0xFF8ACCF7))),
+                                                        : const Color(0xFF8ACCF7))),
                                           )),
                                 );
                               },
@@ -83,13 +81,13 @@ class TicketView extends StatelessWidget {
                                 Icons.local_airport_rounded,
                                 color: isColor == null
                                     ? Colors.white
-                                    : Color(0xFF8ACCF7),
+                                    : const Color(0xFF8ACCF7),
                               ),
                             ),
                           ),
                         ],
                       )),
-                      ThickContainer(
+                      const ThickContainer(
                         isColor: true,
                       ),
                       Expanded(child: Container()),
@@ -147,7 +145,7 @@ class TicketView extends StatelessWidget {
                   SizedBox(
                     height: AppLayout.getHeight(20),
                     width: AppLayout.getWidth(10),
-                    child: DecoratedBox(
+                    child: const DecoratedBox(
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.only(
@@ -196,7 +194,7 @@ class TicketView extends StatelessWidget {
                   SizedBox(
                     height: AppLayout.getWidth(20),
                     width: AppLayout.getHeight(10),
-                    child: DecoratedBox(
+                    child: const DecoratedBox(
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.only(

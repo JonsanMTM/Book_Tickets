@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../utils/app_style.dart';
 
 class DoubleText extends StatelessWidget {
-  DoubleText({Key? key, required this.bigText, required this.smallText})
+  const DoubleText({Key? key, required this.bigText, required this.smallText})
       : super(key: key);
   final String bigText;
   final String smallText;

@@ -18,7 +18,7 @@ class HomeScreen extends StatelessWidget {
       body: ListView(
         children: [
           Container(
-            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
             child: Column(
               children: [
                 Gap(AppLayout.getHeight(40)),
@@ -38,7 +38,7 @@ class HomeScreen extends StatelessWidget {
                       width: AppLayout.getHeight(60),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
-                        image: DecorationImage(
+                        image: const DecorationImage(
                           fit: BoxFit.fitHeight,
                           image: AssetImage("assets/img.png"),
                         ),
@@ -51,7 +51,7 @@ class HomeScreen extends StatelessWidget {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       color: const Color(0xFFF4F6FD)),
-                  padding: EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
                   child: Row(
                     children: [
                       const Icon(
@@ -66,7 +66,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
                 Gap(AppLayout.getHeight(40)),
-                DoubleText(bigText: "Upcoming Flights", smallText: "View all")
+                const DoubleText(bigText: "Upcoming Flights", smallText: "View all")
               ],
             ),
           ),
@@ -82,8 +82,8 @@ class HomeScreen extends StatelessWidget {
           ),
           Gap(AppLayout.getHeight(15)),
           Container(
-              padding: EdgeInsets.symmetric(horizontal: 16),
-              child: DoubleText(bigText: "Hotels", smallText: "View all")),
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: const DoubleText(bigText: "Hotels", smallText: "View all")),
           Gap(AppLayout.getHeight(15)),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,

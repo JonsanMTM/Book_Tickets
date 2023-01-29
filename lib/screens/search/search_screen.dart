@@ -36,13 +36,13 @@ class SearchScreen extends StatelessWidget {
               style: ButtonStyle(
                   padding: MaterialStatePropertyAll(
                       EdgeInsets.symmetric(vertical: AppLayout.getHeight(10))),
-                  backgroundColor: MaterialStatePropertyAll(Color(0xD91130CE))),
+                  backgroundColor: const MaterialStatePropertyAll(Color(0xD91130CE))),
               child: Text(
                 "Find tickets",
                 style: Style.textStyle.copyWith(color: Colors.white),
               )),
           Gap(AppLayout.getHeight(40)),
-          DoubleText(bigText: "Upcoming Flights", smallText: "View all"),
+          const DoubleText(bigText: "Upcoming Flights", smallText: "View all"),
           Gap(AppLayout.getHeight(15)),
           Row(
             children: [
@@ -68,7 +68,7 @@ class SearchScreen extends StatelessWidget {
                       height: AppLayout.getHeight(190),
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(AppLayout.getHeight(12)),
-                          image: DecorationImage(
+                          image: const DecorationImage(
                               fit: BoxFit.cover, image: AssetImage("assets/sit.png"))),
                     ),
                     Gap(AppLayout.getHeight(15)),
@@ -91,7 +91,7 @@ class SearchScreen extends StatelessWidget {
                           boxShadow: [
                             BoxShadow(color: Colors.grey.shade300, blurRadius: 1, spreadRadius: 1)
                           ],
-                          color: Color(0xFF3AB8B8),
+                          color: const Color(0xFF3AB8B8),
                           borderRadius: BorderRadius.circular(AppLayout.getHeight(20)),
                         ),
                         width: size.width * 0.42,
@@ -113,7 +113,7 @@ class SearchScreen extends StatelessWidget {
                           padding: EdgeInsets.all(AppLayout.getHeight(30)),
                           decoration: BoxDecoration(
                               shape: BoxShape.circle,
-                              border: Border.all(width: 18, color: Color(0xFF189999))),
+                              border: Border.all(width: 18, color: const Color(0xFF189999))),
                         ),
                       ),
                     ],

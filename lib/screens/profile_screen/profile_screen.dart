@@ -25,7 +25,7 @@ class ProfileScreen extends StatelessWidget {
                 width: AppLayout.getWidth(90),
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(AppLayout.getHeight(10)),
-                    image: DecorationImage(
+                    image: const DecorationImage(
                       image: AssetImage("assets/img.png"),
                     )),
               ),
@@ -54,15 +54,15 @@ class ProfileScreen extends StatelessWidget {
                       children: [
                         Container(
                           decoration:
-                              BoxDecoration(shape: BoxShape.circle, color: const Color(0xFF526799)),
-                          child: Icon(
+                          const BoxDecoration(shape: BoxShape.circle, color:  Color(0xFF526799)),
+                          child: const Icon(
                             FluentSystemIcons.ic_fluent_shield_filled,
                             color: Colors.white,
                             size: 17,
                           ),
                         ),
                         Gap(AppLayout.getHeight(5)),
-                        Text(
+                        const Text(
                           "Premium status",
                           style: TextStyle(
                               color: Color(0xFF526799), fontWeight: FontWeight.w600, fontSize: 17),
@@ -109,7 +109,7 @@ class ProfileScreen extends StatelessWidget {
                   decoration: BoxDecoration(
                       color: Colors.transparent,
                       shape: BoxShape.circle,
-                      border: Border.all(width: 18, color: Color(0xFF264CD2))),
+                      border: Border.all(width: 18, color: const Color(0xFF264CD2))),
                 ),
               ),
               Container(
@@ -169,19 +169,19 @@ class ProfileScreen extends StatelessWidget {
             ],
           ),
           Gap(AppLayout.getHeight(20)),
-          FourText1(
+          const FourText1(
               firstTop: "23 042",
               secondTop: "Airline CO",
               firstBottom: "Miles",
               secondBottom: "Received from"),
           Gap(AppLayout.getHeight(20)),
-          FourText1(
+          const FourText1(
               firstTop: "23 042",
               secondTop: "Airline CO",
               firstBottom: "Miles",
               secondBottom: "Received from"),
           Gap(AppLayout.getHeight(20)),
-          FourText1(
+          const FourText1(
               firstTop: "23 042",
               secondTop: "Airline CO",
               firstBottom: "Miles",
